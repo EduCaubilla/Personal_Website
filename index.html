@@ -8,13 +8,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300&family=Raleway:wght@300;400;600&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&family=Lato:wght@100;200;300&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/2f0e38e9f8.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <nav id="navbar" class="navbar fixed-top navbar-expand-lg navbar-light bg-transparent">
         <a class="navbar-brand" href="#main">
             <img class="logo" src="./media/Logo_ECQ.png">
@@ -39,10 +37,12 @@
     </nav>
 
     <main id="main">
-        <section id="welcome-section" class="container">
+        <section id="welcome-section" class="container-fluid">
             <div class="intro-welcome row text-center" style="margin: 0 auto;">
-                <h1 class="col-12">Edu Caubilla</h1>
-                <h3 class="col-12">I'm a <span class="role-text">full stack developer</span></h3>
+                <h1 class="col-12">EDU CAUBILLA</h1>
+                <div class="wrapper col-12">
+                    <h3>I'm a <span class="role-text"></span></h3>
+                </div>
                 <div class="intro-buttons col-12">
                     <a href="#projects"><button id="projects_link"
                             class="btn btn-outline-secondary btn-lg">Work</button></a>
@@ -52,17 +52,19 @@
                 </div>
             </div>
         </section>
-
+    
         <section id="projects" class="container-fluid text-center">
             <div class="projects-intro text-center">
                 <h2 class="projects-header">Projects</h2>
             </div>
-            <div class="projects-deck-first row">
+            <div class="projects-deck row">
                 <div class="card msf">
                     <img class="card-img-top" src="./media/MSFLanding.png" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">Media Stock Finder</h5>
                         <p class="card-text">Search Engine of photo and video. Made with MERN stack. In progress.</p>
+                        <hr>
+                        <p>Manager | Full Stack Developer</p>
                         <a href="https://mediastockfinder.imfast.io/" target="_blank"
                             class="btn btn-outline-secondary project project-tile">See project</a>
                     </div>
@@ -72,6 +74,8 @@
                     <div class="card-body">
                         <h5 class="card-title">El Tiempo</h5>
                         <p class="card-text">Simple weather app (in spanish). Made with HTML, CSS and Vanilla JS.</p>
+                        <hr>
+                        <p>Manager | Full Stack Developer</p>
                         <a href="https://eltiempo.imfast.io/" target="_blank"
                             class="btn btn-outline-secondary project project-tile">See project</a>
                     </div>
@@ -81,6 +85,8 @@
                     <div class="card-body">
                         <h5 class="card-title">Sitbasic</h5>
                         <p class="card-text">Commercial website. Made with HTML, SCSS and Vanilla JS. In progress.</p>
+                        <hr>
+                        <p>Manager | Full Stack Developer</p>
                         <a href="https://sitbasic2.imfast.io/" target="_blank"
                             class="btn btn-outline-secondary project project-tile">See project</a>
                     </div>
@@ -90,6 +96,8 @@
                     <div class="card-body">
                         <h5 class="card-title">Equipo Diafragma</h5>
                         <p class="card-text">Web for a Visual Production StartUp. Made with Weebly.</p>
+                        <hr>
+                        <p>Manager | Full Stack Developer</p>
                         <a href="https://www.equipodiafragma.com" target="_blank"
                             class="btn btn-outline-secondary project project-tile">See project</a>
                     </div>
@@ -99,41 +107,78 @@
                     <div class="card-body">
                         <h5 class="card-title">Tesauro Historia y Mitología</h5>
                         <p class="card-text">Ancient History and Mithology Dictionary with +65.000 items. Made with
-                            Joomla. Also PHP, HTML and CSS for polish details. </p>
+                            Joomla + PHP, HTML and CSS for polish details. </p>
+                        <hr>
+                        <p>Manager | Full Stack Developer</p>
                         <a href="https://tesaurohistoriaymitologia.com" target="_blank"
+                            class="btn btn-outline-secondary project project-tile">See project</a>
+                    </div>
+                </div>
+                <div class="card netlify">
+                    <img class="card-img-top" src="./media/Jamstack_Conf_virtual_2020.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Netlify | Jamstack Conf Virtual 2020</h5>
+                        <p class="card-text">Virtual Edition of the Jamstack Conf 2020 made in May. </p>
+                        <hr>
+                        <p>Video Editor | Postproduction</p>
+                        <a href="https://www.youtube.com/c/JAMstackConf/videos" target="_blank"
+                            class="btn btn-outline-secondary project project-tile">See project</a>
+                    </div>
+                </div>
+                <div class="card docker">
+                    <img class="card-img-top" src="./media/Docker.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Docker</h5>
+                        <p class="card-text">Highlights & Intro Videos for DockerCon LIVE 2020, DockerCon 19 & DockerCon
+                            18 Bcn + Docker Customer Stories. </p>
+                        <hr>
+                        <p>Producer | Postproduction</p>
+                        <a href="https://www.youtube.com/watch?v=K6huwWH-QLE" target="_blank"
+                            class="btn btn-outline-secondary project project-tile">See an example</a>
+                    </div>
+                </div>
+                <div class="card s4w">
+                    <img class="card-img-top" src="./media/s4w.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Spain for Weddings</h5>
+                        <p class="card-text">Platform for booking destination weddings in Spain.</p>
+                        <hr>
+                        <p>Marketing & Comm. Consultant | Producer</p>
+                        <a href="https://www.spain4weddings.com/" target="_blank"
                             class="btn btn-outline-secondary project project-tile">See project</a>
                     </div>
                 </div>
             </div>
         </section>
-
+    
         <section id="about" class="container-fluid">
             <div class="about-intro text-center">
                 <h2 class="about-header">About</h2>
             </div>
             <div class="about-body row">
-                <div class="about-text col-6">
+                <div class="about-text col-12 col-md-12 col-lg-6">
                     <h5>What could I say about myself?</h5>
                     <hr>
                     <p>For the last +10 years I've been a freelance Video Producer and I've worked with many brands and
                         agencies in different projects as a cameraman, script-writer, editor and producer. </p>
                     <p>About 4 years ago I began to get involved in web development. Firstly with CMS like Joomla and
                         Wordpress, and since about a year I've coding websites and simple apps based in Javascript or
-                        Python and using various tools like Angular, node or express, and also, working with relational
-                        and non relational databases as MySql and MongoDB.</p>
-                    <p>I enjoy very much learning new stuff to apply to projects and deliver my best. I'm a team player
+                        Python and using tools like Angular, node or express, and working with relational and non
+                        relational databases as MySql and MongoDB.</p>
+                    <p>I enjoy very much learning new things to apply to projects and deliver my best. I'm a team player
                         and always trying to listen, understand and perform at my finest to fulfill the objectives.</p>
+                    <div class="about-buttons">
+                        <a href="/media/CV 2020 - Edu Caubilla ENG.pdf" target="_blank"><button
+                                class="btn btn-outline-secondary btn-lg">See CV</button></a>
+                    </div>
                 </div>
-                <div class="about-photo col-6 text-center">
+                <div class="about-photo col-12 col-md-12 col-lg-6 text-center">
                     <img class="portrait" src="./media/EduCaubilla.jpg">
                 </div>
             </div>
-            <div class="about-buttons">
-                <a href="/media/CV 2020 - Edu Caubilla ENG.pdf" target="_blank"><button
-                        class="btn btn-outline-secondary">See CV</button></a>
-            </div>
+    
         </section>
-
+    
         <section id="contact" class="container-fluid">
             <div class="contact-intro text-center">
                 <h2 class="contact-header">Contact</h2>
@@ -143,22 +188,22 @@
                 <a id="profile-link" href="https://twitter.com/Ecaubilla" target="_blank">
                     <i class="fab fa-twitter-square"><span>Twitter</span></i>
                 </a>
-
+    
                 <a id="profile-link" href="https://github.com/EduCaubilla" target="_blank">
                     <i class="fab fa-github-square"><span>Github</span></i>
                 </a>
-
+    
                 <a id="profile-link" href="https://www.linkedin.com/in/EduCaubilla/" target="_blank">
                     <i class="fab fa-linkedin"><span>Linkedin</span></i>
                 </a>
-
+    
                 <a id="profile-link" href="mailto:educaubilla@gmail.com" target="_blank">
                     <i class="fas fa-envelope-square"><span>Email</span></i>
                 </a>
                 </i>
-
+    
             </div>
-
+    
         </section>
     </main>
 

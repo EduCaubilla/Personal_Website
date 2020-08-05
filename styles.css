@@ -1,185 +1,373 @@
 html {
-    box-sizing: border-box;
-    font-size: 16px;
-    font-family: 'Raleway', sans-serif;
-    scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+  scroll-behavior: smooth;
 }
 
 nav {
-    height: 75px;
-    margin: 0 5rem;
-    position: fixed;
+  height: 7rem;
+  position: fixed;
 }
 
 h1 {
-    color: #a0a0a0;
-    font-size: 6.5rem;
-    font-weight: 100;
-    padding: 1rem;
+  font-size: 5.2rem;
+  font-weight: 300;
+  padding: 1rem;
+  font-family: "Montserrat", sans-serif;
 }
 
 h2 {
-    color: #5ce1e6;
-    font-size: 5rem;
-    font-weight: 100;
+  color: #5ce1e6;
+  font-size: 4.3rem;
+  font-weight: 100;
 }
 
 h3 {
-    color: #024d79;
-    font-size: 3.5rem;
-    font-weight: 100;
-    padding: 1rem;
-    font-family: 'Lato', sans-serif;
+  color: #024d79;
+  font-size: 3.5rem;
+  font-weight: 200;
+  padding: 1rem;
+  font-family: "Lato", sans-serif;
 }
 
 h5 {
-    color: #024d79;
-    font-size: 2rem;
-    font-weight: 100;
+  color: #024d79;
+  font-size: 2rem;
+  font-weight: 100;
 }
 
 p {
-    font-family: 'Lato', sans-serif;
-    color: #8b8b8b;
-    font-size: 1.2rem;
-    font-weight: 200;
+  font-family: "Lato", sans-serif;
+  color: #8b8b8b;
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+
+.btn {
+  font-weight: 100;
+  color: #a8a8a8;
+  border-color: #c8c8c8;
+}
+
+.btn:hover,
+.btn:active {
+  color: white;
+  border-color: #c8c8c8;
+  background-color: #c8c8c8;
 }
 
 .nav-link {
-    color: #024d79 !important;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 300;
-    font-size: 1.2rem;
-    margin-left: 2rem;
-    transition: color 0.6s;
+  color: #a8a8a8 !important;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+  margin-left: 0.8rem;
+  transition: color 0.6s;
 }
 
 .nav-link:hover {
-    color: #5ce1e6 !important;
+  color: #5ce1e6 !important;
+}
+
+.navbar-brand {
+  padding-left: 6%;
+}
+
+.navbar-nav {
+  margin-right: 30px !important;
+}
+
+.navbar-toggler {
+  margin-right: 30px !important;
 }
 
 .logo {
-    height: 50px;
-    width: auto;
+  height: 50px;
+  width: auto;
 }
 
 #welcome-section {
-    height: 100vh;
+  min-height: 100vh;
+  background: linear-gradient(
+    180deg,
+    rgba(2, 77, 121, 0.06764712721025912) 0%,
+    rgba(98, 144, 171, 0.07044824765843838) 10%,
+    rgb(255, 255, 255) 20%
+  );
 }
 
 #welcome-section .btn {
-    margin: 2rem 2.5rem;
-    padding: .85rem 2rem;
-    font-weight: 100;
+  margin: 2rem 2.5rem;
+  padding: 0.85rem 2rem;
 }
 
 .intro-welcome {
-    padding-top: 30vh;
+  padding-top: 30vh;
+}
+
+.intro-welcome h1 {
+  background: -webkit-linear-gradient(
+    to left,
+    #024d79,
+    #0d45a0,
+    #5ce1e6,
+    #9cecfb
+  );
+  background: linear-gradient(to left, #024d79, #0d45a0, #5ce1e6, #9cecfb);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .role-text {
-    color: #5ce1e6;
+  color: #5c9ce6;
 }
 
+.intro-welcome span:before {
+  content: "";
+  animation: animate infinite 15s;
+}
+
+@keyframes animate {
+  0% {
+    content: "Full Stack Developer";
+  }
+
+  20% {
+    content: "Video Producer";
+  }
+
+  40% {
+    content: "Team Player";
+  }
+
+  55% {
+    content: "Hard Worker";
+  }
+
+  60% {
+    content: "Problem-solver";
+  }
+
+  100% {
+    content: "Full Stack Developer";
+  }
+}
 
 #projects {
-    /* background-color: #024d790a; */
-    padding: 0 24%;
-    background: rgb(255, 255, 255);
-    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(98, 144, 171, 0.07044824765843838) 10%, rgba(2, 77, 121, 0.06764712721025912) 20%);
+  padding: 0 15%;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(98, 144, 171, 0.07044824765843838) 10%,
+    rgba(2, 77, 121, 0.06764712721025912) 20%
+  );
 }
 
 .projects-intro {
-    padding: 7rem 10rem;
+  padding: 7rem 5rem 5rem;
 }
 
-.projects-deck-first {
-    padding: 1rem;
-}
-
-#projects .btn {
-    font-weight: 100;
+.projects-deck {
+  padding: 1rem;
 }
 
 .card {
-    max-width: 25rem;
-    padding: 1rem;
-    margin: 1rem auto;
+  max-width: 25rem;
+  padding: 1rem;
+  margin: 1rem auto;
 }
-
-/* 
-.logo-back-middle {
-    position: absolute;
-    top: 160vh;
-    left: 12vw;
-    z-index: -1;
-    opacity: 0.025;
-    transform: scale(2.5);
-} */
 
 #about {
-    height: 100vh;
-    padding: 0 24%;
-    background: rgba(2, 77, 121, 0.06764712721025912);
-    background: linear-gradient(180deg, rgba(2, 77, 121, 0.06764712721025912) 0%, rgba(98, 144, 171, 0.07044824765843838) 10%, rgb(255, 255, 255) 20%);
-}
-
-#about .btn {
-    font-weight: 100;
+  min-height: 100vh;
+  padding: 0 15%;
+  background: rgba(2, 77, 121, 0.06764712721025912);
+  background: linear-gradient(
+    180deg,
+    rgba(2, 77, 121, 0.06764712721025912) 0%,
+    rgba(98, 144, 171, 0.07044824765843838) 10%,
+    rgb(255, 255, 255) 20%
+  );
 }
 
 .about-intro {
-    padding: 7rem 10rem;
+  padding: 7rem 5rem;
 }
 
 .about-buttons {
-    margin-top: 1rem;
+  margin-top: 2rem;
+}
+
+.about-buttons .btn {
+  padding: 0.75rem 1rem;
+}
+
+.about-body {
+  display: flex;
+  flex-wrap: wrap-reverse;
 }
 
 .portrait {
-    max-width: 18vw;
-    border-radius: 50%;
-    margin: 2rem;
-    border: solid .1px #024d793a;
-    transform: rotateY(180deg)
+  max-width: 18vw;
+  border-radius: 50%;
+  margin: 2rem;
+  border: solid 0.1px #024d793a;
+  transform: rotateY(180deg);
 }
 
 #contact {
-    height: 100vh;
-    padding: 0 24%;
-    /* background-color: #024d790a; */
-    background: rgb(255, 255, 255);
-    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(98, 144, 171, 0.07044824765843838) 10%, rgba(2, 77, 121, 0.06764712721025912) 20%);
+  min-height: 100vh;
+  padding: 0 15%;
+  /* background-color: #024d790a; */
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(98, 144, 171, 0.07044824765843838) 10%,
+    rgba(2, 77, 121, 0.06764712721025912) 20%
+  );
 }
 
 .contact-intro {
-    padding: 7rem 10rem;
+  padding: 7rem 5rem;
 }
 
 .contact-text {
-    margin: 5rem 0 0;
+  margin: 5rem 0 0;
 }
 
 .contact-links a {
-    color: #a0a0a0;
+  color: #a0a0a0;
 }
 
 .contact-links a:hover {
-    color: #5ce1e6;
+  color: #5ce1e6;
 }
 
 .contact-links i {
-    padding: 2rem;
-    font-size: 2rem;
+  padding: 2rem;
+  font-size: 1.7rem;
 }
 
 .contact-links span {
-    padding: 0 0.5rem;
-    font-family: 'Raleway',
-        sans-serif;
-    font-weight: 100;
+  padding: 0 0.5rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 100;
 }
 
 #profile-link {
-    margin: 1rem;
+  margin: 1rem;
+}
+
+/*
+---------------- MEDIA QUERIES --------------------
+*/
+
+/*
+------------------ 1280px -------------------------
+*/
+
+@media screen and (max-width: 1281px) {
+  html {
+    font-size: 14px;
+  }
+
+  .about-intro {
+    padding: 7rem 5rem 4rem;
+  }
+}
+
+/*
+------------------ 769px -------------------------
+*/
+
+@media screen and (max-width: 769px) {
+  html {
+    font-size: 13px;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
+
+  .projects-intro {
+    padding: 7rem 5rem 3rem;
+  }
+
+  #about {
+    padding: 0 10%;
+  }
+
+  .about-intro {
+    padding: 7rem 5rem 1.5rem;
+  }
+
+  .portrait {
+    margin: 0.5rem;
+  }
+
+  #contact {
+    padding: 0 10%;
+  }
+
+  .contact-links {
+    margin-top: 2rem;
+  }
+  .contact-links i {
+    padding: 1rem;
+    font-size: 1.7rem;
+  }
+
+  #profile-link {
+    margin: 0.3rem;
+  }
+}
+
+/*
+------------------ 500px -------------------------
+*/
+
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
+
+  #welcome-section .btn {
+    margin: 2rem 0.4rem;
+  }
+
+  .projects-deck .btn {
+    padding: 0.75rem 1.5rem;
+  }
+
+  .about-buttons .btn {
+    padding: 0.75rem 1.5rem;
+  }
 }
