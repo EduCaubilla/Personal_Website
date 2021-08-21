@@ -128,9 +128,118 @@ p {
 .intro-welcome span:before {
   content: "";
   animation: animate infinite 15s;
+  -webkit-animation: animate infinite 15s;
+  -moz-animation: animate infinite 15s;
+  -o-animation: animate infinite 15s;
+  -ms-animation: animate infinite 15s;
 }
 
 @keyframes animate {
+  0% {
+    content: "Full Stack Developer";
+  }
+
+  20% {
+    content: "Video Producer";
+  }
+
+  40% {
+    content: "Team Player";
+  }
+
+  55% {
+    content: "Hard Worker";
+  }
+
+  60% {
+    content: "Problem-solver";
+  }
+
+  100% {
+    content: "Full Stack Developer";
+  }
+}
+
+
+@-webkit-keyframes animate {
+  0% {
+    content: "Full Stack Developer";
+  }
+
+  20% {
+    content: "Video Producer";
+  }
+
+  40% {
+    content: "Team Player";
+  }
+
+  55% {
+    content: "Hard Worker";
+  }
+
+  60% {
+    content: "Problem-solver";
+  }
+
+  100% {
+    content: "Full Stack Developer";
+  }
+}
+
+@-moz-keyframes animate {
+  0% {
+    content: "Full Stack Developer";
+  }
+
+  20% {
+    content: "Video Producer";
+  }
+
+  40% {
+    content: "Team Player";
+  }
+
+  55% {
+    content: "Hard Worker";
+  }
+
+  60% {
+    content: "Problem-solver";
+  }
+
+  100% {
+    content: "Full Stack Developer";
+  }
+}
+
+@-o-keyframes animate {
+  0% {
+    content: "Full Stack Developer";
+  }
+
+  20% {
+    content: "Video Producer";
+  }
+
+  40% {
+    content: "Team Player";
+  }
+
+  55% {
+    content: "Hard Worker";
+  }
+
+  60% {
+    content: "Problem-solver";
+  }
+
+  100% {
+    content: "Full Stack Developer";
+  }
+}
+
+@-ms-keyframes animate {
   0% {
     content: "Full Stack Developer";
   }
